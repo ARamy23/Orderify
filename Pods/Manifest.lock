@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (4.6.0)
+  - AnimatableReload (0.1.0)
+  - Canvas (0.1.2)
+  - SVProgressHUD (2.2.5)
+  - SwiftyJSON (4.0.0)
+  - TableViewReloadAnimation (0.0.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - AnimatableReload
+  - Canvas
+  - SVProgressHUD
+  - SwiftyJSON
+  - TableViewReloadAnimation
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  AnimatableReload: dcef76a16258b82bf845225012aa8f3b1aa7df6c
+  Canvas: eb861e3b555d032648146c8ffda1a5dea40059ca
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  TableViewReloadAnimation: f3a4c4048efbc56331be98075f26a2e533a14c16
+
+PODFILE CHECKSUM: 7476a13de2077984bc8fc9d2056a835bc551f7c0
+
+COCOAPODS: 1.4.0
