@@ -109,6 +109,14 @@
 			path = "Restaurant Cell";
 			sourceTree = "<group>";
 		};
+		5F9D3FA520A5ECDD00C70D36 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5F47E5A520950C99000E8E36 /* SharedData.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		5FCACFE220765B08004FBF7A /* Restaurant Element Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,26 +147,27 @@
 		5FD4B7FE206EB179006A9A2E /* Orderify */ = {
 			isa = PBXGroup;
 			children = (
+				5F9D3FA520A5ECDD00C70D36 /* Helpers */,
 				5FD4B817206EB18E006A9A2E /* Third Party */,
 				5FD4B816206EB18C006A9A2E /* Model */,
-				5FD4B815206EB18A006A9A2E /* View */,
-				5FD4B814206EB186006A9A2E /* Controller */,
+				5FD4B815206EB18A006A9A2E /* Storyboards */,
+				5FD4B814206EB186006A9A2E /* Business Layer */,
 				5FD4B818206EB190006A9A2E /* Supporting Files */,
 			);
 			path = Orderify;
 			sourceTree = "<group>";
 		};
-		5FD4B814206EB186006A9A2E /* Controller */ = {
+		5FD4B814206EB186006A9A2E /* Business Layer */ = {
 			isa = PBXGroup;
 			children = (
 				5FD4B7FF206EB179006A9A2E /* AppDelegate.swift */,
 				5FD4B81D206EBA59006A9A2E /* API Manager */,
 				5FD4B819206EB9A3006A9A2E /* View Controllers */,
 			);
-			path = Controller;
+			path = "Business Layer";
 			sourceTree = "<group>";
 		};
-		5FD4B815206EB18A006A9A2E /* View */ = {
+		5FD4B815206EB18A006A9A2E /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				5FCACFE220765B08004FBF7A /* Restaurant Element Cell */,
@@ -168,7 +177,7 @@
 				5FD4B803206EB179006A9A2E /* Main.storyboard */,
 				5FD4B80B206EB179006A9A2E /* LaunchScreen.storyboard */,
 			);
-			path = View;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		5FD4B816206EB18C006A9A2E /* Model */ = {
@@ -176,7 +185,6 @@
 			children = (
 				5FD4B822206EC0AE006A9A2E /* User.swift */,
 				5FD4B824206EC79F006A9A2E /* Restaurant.swift */,
-				5F47E5A520950C99000E8E36 /* SharedData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

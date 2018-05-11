@@ -103,6 +103,7 @@ class RestaurantElementViewController: UIViewController
         let vc = storyboard.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
         let restaurantLocation =  CLLocation(latitude: (restaurant?.lat)!, longitude: (restaurant?.lng)!)
         vc.setLocation(restaurantLocation: restaurantLocation)
+        vc.setInfo(restaurantDescription: restaurant?.description, restaurantTitle: restaurant?.title)
         
         navigationController?.pushViewController(vc, animated: true)
                    

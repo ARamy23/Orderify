@@ -15,6 +15,8 @@ class MapViewController: UIViewController {
     @IBOutlet weak var restaurantMapView: MKMapView!
     
     //MARK:- Helping Variables
+    var restaurantTitle: String?
+    var restaurantDescription: String?
     var restaurantLocation: CLLocation?
     let regionRadius: CLLocationDistance = 500
     
@@ -29,6 +31,12 @@ class MapViewController: UIViewController {
     func setLocation(restaurantLocation: CLLocation)
     {
         self.restaurantLocation = restaurantLocation
+    }
+    
+    func setInfo(restaurantDescription: String?, restaurantTitle: String?)
+    {
+        self.restaurantTitle = restaurantTitle
+        self.restaurantDescription = restaurantDescription
     }
     
     func setupMap()
@@ -46,6 +54,13 @@ class MapViewController: UIViewController {
     {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius, regionRadius)
         restaurantMapView.setRegion(coordinateRegion, animated: true)
+        addAnnotation(on: location)
+    }
+    
+    func addAnnotation(on coord: CLLocation)
+    {
+        let annotation = Artwork(title: restaurantTitle!, locationName: restaurantDescription!, discipline: "EAT HERE!", coordinate: coord.coordinate)
+        restaurantMapView.addAnnotation(annotation)
     }
 
 }
